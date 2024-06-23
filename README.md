@@ -10,7 +10,7 @@
 
 2. Create and activate a virtual environment
    ```bash
-   python -m venv venv
+   python -m venv venv        # On Mac (sometimes on Linux) use `python3 -m venv venv`
    source venv/bin/activate   # On Windows use `source venv/Scripts/activate`
    ```
 
@@ -35,15 +35,23 @@
    python manage.py runserver
    ```
 
-7. API Endpoints:
+7. Find the `authentication_token` for users in the Django admin interface.
+   - Visit [django admin](http://127.0.0.1:8000/admin/users/customuser/) and log in with the superuser credentials. (Assuming the application is running on `local machine using 8000 port`)
+
+8. API Endpoints:
    
-   - `POST /API/users/` - Create a new user (Only manager)
    - `GET /API/users/` - List all users (Only customer)
    - `GET /API/users/<username>/` - Get user detail (Only customer)
-   - `DELETE /API/users/<username>/` - Delete a user (Only manager)
+   - `POST /API/users/` - Create a new user (Only manager)
    - `PUT /API/users/<username>/` - Update a user (Only manager)
+   - `PATCH /API/users/<username>/` - Partial Update a user (Only manager)
+   - `DELETE /API/users/<username>/` - Delete a user (Only manager)
 
-   # N.B: Don't forget to add trailing slash in the end of the url like the above.
+   ## N.B: Don't forget to add trailing slash in the end of the url like the above.
+
+9. Postman API Documentation:
+   - Download the Postman collection and environment files from [Google Drive](https://drive.google.com/drive/folders/1F-Dp4N5lltO-MnpNdtzq1UDUSZIQFK4W). 
+   - Import the collection and environment file into Postman.
 
 ## Notes:
 - For creating a user, you need to provide a `username`, `email`, and `password` in the `request body`.
