@@ -50,6 +50,7 @@
    ## N.B: Don't forget to add trailing slash in the end of the url like the above.
 
 9. Postman API Documentation:
+   - Postman Public Collection (With Environment) Link: [Api Docs](https://elements.getpostman.com/redirect?entityId=36498247-02aa02a7-6528-4f7e-a670-004f183873ca&entityType=collection)
    - Download the Postman collection and environment files from [Google Drive](https://drive.google.com/drive/folders/1F-Dp4N5lltO-MnpNdtzq1UDUSZIQFK4W). 
    - Import the collection and environment file into Postman.
 
